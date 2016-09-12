@@ -33,8 +33,30 @@
 
 										<label for="nome_usuario">Nome:</label>
 										<input type="radio" id="nome_usuario" name="pesquisa_usuario" value="3" require >
+
+										<div class="form-group">
+										<label for="compromisso">Digite sua pesquisa:</label>
+										<input type="text" id="tpesquisa" name="pesquisa" placeholder="digite sua pesquisa aqui" require >
 										
 									</div>
+
+										<!--<?php 
+											/*switch (variable) {
+												case 'value':
+													# code...
+													break;
+
+													case 'value':
+														# code...
+														break;
+												
+												default:
+													# code...
+													break;
+											}*/
+										 ?>
+										
+									</div>-->
 
 							</form>
 						</section>
