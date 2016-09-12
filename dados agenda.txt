@@ -1,0 +1,14 @@
+agendar compromisso 
+data 
+hora 
+login 
+usuario 
+telefone
+email
+nome
+status_usuario
+local compromisso
+id_usuario
+
+
+ucwords deixa as primeira letra maiscula
