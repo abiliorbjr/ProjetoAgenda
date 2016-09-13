@@ -7,11 +7,20 @@
 			//echo $_SESSION['login']['user']."</br>";
 			//echo $_SESSION['login']['email']."</br>";
 			//echo $_SESSION['login']['senha']."</br>";
-			echo "Adicionando Compromissos do usuário:  " . $_SESSION['login']['login_usuario']."</br>"; /*quero colocar o login do usuario*/
+			/*echo "Adicionando Compromissos do usuário:  " . $_SESSION['login']['login_usuario']."</br>"; /*quero colocar o login do usuario*/
 
-
-			//começa aqui o formulario para incluir os compromissos
 			?>
+
+			<div class="container">
+				<div class="row">
+					<section class="col-md-12 col-xs-12 col-ms-12 ">
+						<section class="col-md-12">
+								<legend>
+									<h1><?php echo "Usuário:  " . $_SESSION['login']['login_usuario']."</br>";?></h1>
+								</legend>
+
+
+			
 
 			<div class="container">
 				<div class="row">
