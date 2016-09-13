@@ -6,9 +6,16 @@
 
 			 /*echo $_SESSION['login']['user']."</br>";*/
 
-             echo " Compromissos do usuário: " . $_SESSION['login']['login_usuario']."</br></br>";
-
              ?>
+             <div class="container">
+                <div class="row">
+                    <section class="col-md-12 col-xs-12 col-ms-12 ">
+                        <section class="col-md-12">
+                                <legend id="loginTopo">
+                                    <h1><?php echo "Agenda do usuário:  " . $_SESSION['login']['login_usuario']."</br>";?></h1>
+                                </legend>
+
+             
 
              <div id="calendar"></div>
 
