@@ -56,9 +56,20 @@
 </div>
 
 
-<input class="btn btn-default" type="submit" value="escolher">
+		<div class="form-group">
+			<input type="submit" name="send" value="Adicionar" class="btn btn-success pull-right">
+		</div>
 				 	
 				 	
 				 </section>
 				 </form>
+
+				 <form action="index.php?pagina=totalUsuariosCopia" method="post">
+
+                                        <div class="form-group">
+
+                                            <input type="submit" name="send" value="Voltar" class="btn btn-success pull-right">
+                                            
+                                        </div> 
+                                        </form>
 

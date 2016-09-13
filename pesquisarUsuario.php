@@ -11,6 +11,7 @@
 
  ?>
 
+<form action="#" method="post">
  <div class="container">
 				<div class="row">
 					<section class="col-md-6 col-xs-12 col-ms-12 col-md-offset-3">
@@ -40,6 +41,11 @@
 										
 									</div>
 
+
+									<div class="form-group">
+											<input type="submit" name="send" value="Pesquisar" class="btn btn-success pull-right">
+									</div>
+
 										<!--<?php 
 											/*switch (variable) {
 												case 'value':
@@ -59,7 +65,17 @@
 									</div>-->
 
 							</form>
+
+							<form action="index.php?pagina=totalUsuariosCopia" method="post">
+
+                                        <div class="form-group">
+
+                                            <input type="submit" name="send" value="Voltar" class="btn btn-success pull-right">
+                                            
+                                        </div> 
+                                        </form>
 						</section>
 					</section>
 				</div>
 </div>
+</form>

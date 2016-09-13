@@ -34,7 +34,20 @@ include_once'menu.inc';
 												<input type="submit" name="send" value="Deletar" class="btn btn-success pull-right">
 											</div>
 
-										</form>
+
+
+                                        </form>  
+
+                                        <form action="index.php?pagina=totalUsuariosCopia" method="post">
+
+                                        <div class="form-group">
+
+                                            <input type="submit" name="send" value="Voltar" class="btn btn-success pull-right">
+                                            
+                                        </div> 
+                                        </form>
+                        
+                                    
 										
 
 								</section><!-- fim class col-md-10-->

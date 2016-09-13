@@ -93,7 +93,7 @@
 
                         
                         
-                        <a href="#" class="btn btn-danger btn-xs pull-right btnadd">
+                        <a href="pesquisarUsuario.php" class="btn btn-danger btn-xs pull-right btnadd">
                             <i class="glyphicon glyphicon-filter"></i>
                                 Pesquisar Usuário
                         </a>
