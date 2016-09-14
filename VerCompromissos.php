@@ -25,15 +25,21 @@
                        
 
 		}else{
-			echo "Você precisa estar logar para ver os compromissos"."</br>";
-
+			/*echo "Você precisa estar logar para ver os compromissos"."</br>";*/
 
             ?>
-            
-            <section class="col-md-8 col-xs-8 col-ms-8 col-md-offset-1">
-                        <section class="col-md-9">
 
-                            <div class="container">        
+                        <div class="container">
+                <div class="row">
+                    <section class="col-md-11 col-xs-12 col-ms-12 col-md-offset-1 ">
+                        <!--<section class="col-md-12">-->
+                                <legend id="avisoLogado">
+                                    <h1><?php echo "Você precisa estar logado(a) para ver um compromisso";?></h1>
+                                </legend>
+
+
+
+                                        
     
                                      <form action="index.php?pagina=login" method="post">
 
@@ -45,7 +51,19 @@
                         
                                     </form>
 
-                            </div>
+                            
+
+
+                                
+                    }
+
+
+            ?>
+            
+            <section class="col-md-8 col-xs-8 col-ms-8 col-md-offset-1">
+                        <section class="col-md-9">
+
+                            
 
                             </section>
                     </section> 
@@ -65,7 +83,7 @@
                                         
 		}
 
-		echo "string";
+		
 ?>
 
 

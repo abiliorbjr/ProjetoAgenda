@@ -84,16 +84,18 @@ echo "<a href=\"javascript:history.go(-1)\">Não</a>";*/
 
 }else{
 
-	echo "Você não está mais logado!!!!";
+	/*echo "Você não está mais logado!!!!";*/
 
-	?>
+    ?>
+        <div class="container">
+                <div class="row">
+                    <section class="col-md-9 col-xs-12 col-ms-12 col-md-offset-3 ">
+                        <!--<section class="col-md-12">-->
+                                <legend id="avisoLogado">
+                                    <h1><?php echo "Você não está mais logado(a)!";?></h1>
+                                </legend>
 
-	<section class="col-md-8 col-xs-8 col-ms-8 col-md-offset-1">
-                        <section class="col-md-9">
-
-                            <div class="container">        
-    
-                                     <form action="index.php?pagina=login" method="post">
+                                <form action="index.php?pagina=login" method="post">
 
                                         <div class="form-group">
 
@@ -102,6 +104,17 @@ echo "<a href=\"javascript:history.go(-1)\">Não</a>";*/
                                         </div>   
                         
                                     </form>
+
+                                <?php
+
+	?>
+
+	<section class="col-md-8 col-xs-8 col-ms-8 col-md-offset-1">
+                        <section class="col-md-9">
+
+                            <div class="container">        
+    
+                                     
 
                             </div>
 
