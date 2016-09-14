@@ -107,6 +107,17 @@
                                 <legend id="avisoLogado">
                                     <h1><?php echo "Você precisa estar logado(a) para agendar um compromisso";?></h1>
                                 </legend>
+                                
+                                <form action="index.php?pagina=login" method="post">
+
+                                        <div class="form-group">
+
+                                            <input type="submit" name="send" value="Login" class="btn btn-success pull-right">
+                                            
+                                        </div>   
+                        
+                                    </form>
+
 
                                 <?php
 					}

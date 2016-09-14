@@ -34,7 +34,7 @@
                     <section class="col-md-11 col-xs-12 col-ms-12 col-md-offset-1 ">
                         <!--<section class="col-md-12">-->
                                 <legend id="avisoLogado">
-                                    <h1><?php echo "Você precisa estar logado(a) para ver um compromisso";?></h1>
+                                    <h1><?php echo "Você precisa estar logado para acessar essa página!!!!";?></h1>
                                 </legend>
 
                                     <form action="index.php?pagina=login" method="post">

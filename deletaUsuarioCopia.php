@@ -1,5 +1,5 @@
 <?php 
-session_start();
+/*session_start(); como já tem na index.php entao nao precisa*/
 include_once'menu.inc';
 
 

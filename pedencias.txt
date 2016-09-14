@@ -1,0 +1,17 @@
+deletando usuario
+cadastrando
+editandoUsuario
+adicionarCompromisso ok
+deletaUsuario
+não está logado
+adicionandoCompromisso
+teste
+
+
+<form action="javascript:history.go(-1)" method="post">
+
+<form action="index.php?pagina=login" method="post">
+
+pendencias 
+
+ja estou logado e mesmo assim consigo logar novamente

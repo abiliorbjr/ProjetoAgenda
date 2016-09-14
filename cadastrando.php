@@ -26,7 +26,7 @@
 	//$validar->bindValue(":telefone",$telefone);
 
 	$validar->execute();
-	if($validar->rowCount() == 0):
+	if($validar->rowCount() == 0){
 
 		//prepara o cadastro
 	$buscaSegura=$pdo->prepare("INSERT INTO usuarios(nome_usuario,email_usuario,login_usuario,senha_usuario,telefone_usuario) VALUES(:nome,:email,:login,:senha,:telefone)");
@@ -39,10 +39,60 @@
 
 	$buscaSegura->execute();
 
-	echo "Cadastrado com sucesso!!!!";
+	/*echo "cadastrado!!!";*/
 
-else:
-	echo "Já existe!!!!";
-endif;
+	?>
+
+						<div class="container">
+                <div class="row">
+                    <section class="col-md-11 col-xs-12 col-ms-12 col-md-offset-1 ">
+                        <section class="col-md-12">
+                                <legend id="avisoLogado">
+                                    <h1><?php echo "Cadastrado com sucesso!";?></h1>
+                                </legend>
+                                
+                                <form action="index.php?pagina=login" method="post">
+
+                                        <div class="form-group">
+
+                                            <input type="submit" name="send" value="Login" class="btn btn-success pull-right">
+                                            
+                                        </div>   
+                        
+                                    </form>
+
+
+                                <?php
+					}
+
+
+
+else{
+	/*echo "Já existe!!!!";*/
+
+	?>
+
+	<div class="container">
+                <div class="row">
+                    <section class="col-md-11 col-xs-12 col-ms-12 col-md-offset-1 ">
+                        <section class="col-md-12">
+                                <legend id="avisoLogado">
+                                    <h1><?php echo "Usuário já existe!";?></h1>
+                                </legend>
+                                
+                                
+                                <form action="javascript:history.go(-1)" method="post">
+
+                                        <div class="form-group">
+
+                                            <input type="submit" name="send" value="Voltar" class="btn btn-success pull-right">
+                                            
+                                        </div>   
+                        
+                                    </form>
+
+                                    <?php
+}
+
 
  ?>

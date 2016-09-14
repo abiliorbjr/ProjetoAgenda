@@ -23,9 +23,36 @@
 						$deletarUsuario->bindValue(1,$id);
 						$deletarUsuario->execute();
 							if ($deletarUsuario->rowCount()>0) {
-								echo "USUARIO DELETADO COM SUCESSO!!!!";
+								/*echo "USUARIO DELETADO COM SUCESSO!!!!";*/
+
+								?>
+
+						<div class="container">
+                <div class="row">
+                    <section class="col-md-11 col-xs-12 col-ms-12 col-md-offset-1 ">
+                        <section class="col-md-12">
+                                <legend id="avisoDeletado">
+                                    <h1><?php echo "Usuário deletado com sucesso!";?></h1>
+                                </legend>
+                                
+                                <?php
+					}
+
 							}else{
-									echo "<h2>NENHUM USUARIO DELETADO, FAVOR INFORMAR O ID CORRETO!!!!</h2>";
+									/*echo "<h2>NENHUM USUARIO DELETADO, FAVOR INFORMAR O ID CORRETO!!!!</h2>";*/
+
+									?>
+
+						<div class="container">
+                <div class="row">
+                    <section class="col-md-11 col-xs-12 col-ms-12 col-md-offset-1 ">
+                        <section class="col-md-12">
+                                <legend id="avisoNenhumUsuario">
+                                    <h1><?php echo "Nenhum usuário deletado, por favor informar o ID correto!";?></h1>
+                                </legend>
+                                
+                                <?php
+
 							}
 
 							?>
@@ -53,11 +80,25 @@
                     <?php
 
 
-				}
+				
 			
 				}else{
 
 						echo "Você precisa estar logar como administrador para deletar um usuário";
+
+						?>
+
+						<div class="container">
+                <div class="row">
+                    <section class="col-md-11 col-xs-12 col-ms-12 col-md-offset-1 ">
+                        <section class="col-md-12">
+                                <legend id="avisoEstarLogado">
+                                    <h1><?php echo "Você precisa estar logar como administrador para deletar um usuário";?></h1>
+                                </legend>
+                                
+                                <?php
+
+							
 						
 					}
 

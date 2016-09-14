@@ -34,10 +34,42 @@ $validar=$pdo->prepare("INSERT INTO compromissos(titulo_compromisso, hora_inicio
 
 	$validar->execute();
 
-	echo "Compromisso cadastrado com sucesso!!!!";
+	/*echo "Compromisso cadastrado com sucesso!!!!";*/
+
+	?>
+
+	<div class="container">
+				                <div class="row">
+				                    <section class="col-md-11 col-xs-12 col-ms-12 col-md-offset-1 ">
+				                        <section class="col-md-12">
+				                                <legend id="avisoEstarLogado">
+				                                    <h1><?php echo "Compromisso cadastrado com sucesso!";?></h1>
+				                                </legend>
+				                        </section>
+				                    </section>
+								</div>
+	</div>
+
+	<?php
+
 	}else{
 
-		echo "Compromisso já existe neste horário por favor escolha outro horário !!!!";
+		/*echo "Compromisso já existe neste horário por favor escolha outro horário!!!!";*/
+		?>
+
+	<div class="container">
+				                <div class="row">
+				                    <section class="col-md-11 col-xs-12 col-ms-12 col-md-offset-1 ">
+				                        <section class="col-md-12">
+				                                <legend id="avisoEstarLogado">
+				                                    <h1><?php echo "Compromisso já existe neste horário por favor escolha outro horário!";?></h1>
+				                                </legend>
+				                        </section>
+				                    </section>
+								</div>
+	</div>
+
+	<?php
 	}
 
  ?>

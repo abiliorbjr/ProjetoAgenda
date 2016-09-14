@@ -56,30 +56,12 @@
     </section>
 </section><!--Termino do Código do painel do botao Adicionar Usuário-->
 
-
-
-
-
-
- 
-
-<!--tentei organizar os botoes com esse style não deu certo
- <style>
-     .panel-heading{
-        /*isso vai mudar a barra aonde estao os botoes alterar*/
-     }
-
-     .btn-xs pull-right btnadd{
-        color: #8b8c7d;
-     }
- </style>--> 
-
 <section class="panel panel-success">
     
                 <section class="panel-heading">
                     <i class="glyphicon glyphicon-list"></i>
                         LISTA DE USUÁRIOS - Sistema Administrativo
-                        <a href="deletaUsuarioCopia.php" class="btn btn-danger btn-xs pull-right btnadd">
+                        <a href="index.php?pagina=deletaUsuarioCopia" class="btn btn-danger btn-xs pull-right btnadd">
                             <i class="glyphicon glyphicon-trash"></i>
                             Deletar Usuário
                         </a>
@@ -93,12 +75,12 @@
 
                         
                         
-                        <a href="pesquisarUsuario.php" class="btn btn-danger btn-xs pull-right btnadd">
+                        <a href="index.php?pagina=pesquisarUsuario" class="btn btn-danger btn-xs pull-right btnadd">
                             <i class="glyphicon glyphicon-filter"></i>
                                 Pesquisar Usuário
                         </a>
 
-                        <a href="editarUsuario.php" class="btn btn-danger btn-xs pull-right btnadd">
+                        <a href="index.php?pagina=editarUsuario" class="btn btn-danger btn-xs pull-right btnadd">
                             <i class="glyphicon glyphicon-pencil"></i>
                                 Alterar Usuário
                         </a>
@@ -172,6 +154,31 @@
 
     <?php 
         }else{
-            echo "Você precisa estar logado para acessar essa página!!!!";
+            /*echo "Você precisa estar logado para acessar essa página!!!!";*/
+
+
+            ?>
+
+                        <div class="container">
+                <div class="row">
+                    <section class="col-md-11 col-xs-12 col-ms-12 col-md-offset-1 ">
+                        <!--<section class="col-md-12">-->
+                                <legend id="avisoLogado">
+                                    <h1><?php echo "Você precisa estar logado(a) para acessar essa página!";?></h1>
+                                </legend>
+
+                                    <form action="index.php?pagina=login" method="post">
+
+                                        <div class="form-group">
+
+                                            <input type="submit" name="send" value="Login" class="btn btn-success pull-right">
+                                            
+                                        </div>   
+                        
+                                    </form>
+
+                             <?php    
+                                        
+        
         }
      ?>
