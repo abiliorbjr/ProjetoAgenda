@@ -37,11 +37,7 @@
                                     <h1><?php echo "Você precisa estar logado(a) para ver um compromisso";?></h1>
                                 </legend>
 
-
-
-                                        
-    
-                                     <form action="index.php?pagina=login" method="post">
+                                    <form action="index.php?pagina=login" method="post">
 
                                         <div class="form-group">
 
