@@ -51,35 +51,7 @@
                         
                                     </form>
 
-                            
-
-
-                                
-                    }
-
-
-            ?>
-            
-            <section class="col-md-8 col-xs-8 col-ms-8 col-md-offset-1">
-                        <section class="col-md-9">
-
-                            
-
-                            </section>
-                    </section> 
-
-            
-
-
-            
-
-            
-
-            
-                              
-                        
-
-            <?php    
+                             <?php    
                                         
 		}
 
@@ -88,15 +60,7 @@
 
 
 
-
-
-	
-
-
-
-	
-
-                <!--<?php
+<!--<?php
                    /* $sql = "SELECT * FROM compromissos";
                     $busca = $pdo->query($sql);
                     $linha = $busca->rowCount();
