@@ -56,6 +56,10 @@
     </section>
 </section><!--Termino do Código do painel do botao Adicionar Usuário-->
 
+
+<div class="row">
+                    <section class="col-md-12 col-xs-12 col-ms-9  ">
+
 <section class="panel panel-success">
     
                 <section class="panel-heading">
@@ -92,6 +96,10 @@
 
         
 </section>  
+
+</section>
+
+</div>
 
    
         

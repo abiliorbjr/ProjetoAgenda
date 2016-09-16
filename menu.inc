@@ -13,6 +13,7 @@
 		<!-- Custom CSS -->
     	<link href="css/simple-sidebar.css" rel="stylesheet">
 
+
     	<link rel='stylesheet' href='calendario/fullcalendar.css' />
 
 <script src='calendario/lib/moment.min.js'></script>
@@ -66,7 +67,7 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-default" role="navigation">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 								<div class="navbar-header">
 									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">

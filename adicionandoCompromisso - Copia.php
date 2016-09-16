@@ -1,26 +1,47 @@
-<?php 
+<?php
+function converterDataHoraBrazil2BancoMySQL($dataBrazil) {
+        $dataConvertida = "";
+        if(isset($dataBrazil) && $dataBrazil) {
+            $arDataHora = explode(" ", $dataBrazil);
+            $data = $arDataHora[0];
+            $hora = $arDataHora[1];
+            $array = explode("/", $data);
+            $array = array_reverse($array);
+            $str = implode($array, "/");
+            $str .= ' ' . $hora;
+            $dataConvertida = date("Y-m-d H:i:s", strtotime($str));
+        }
+        return $dataConvertida;
+    }
+
 	include_once'menu.inc';
 	include_once'classes/conexao.class.php';
 	$pdo = conectar();
 
-	$titulo_compromisso=strtolower($_POST["titulo_compromisso"]);
-	$hora_inicio_teste=$_POST["hora_inicio_teste"];
-	$hora_final_teste=$_POST["hora_final_teste"];
+	#$titulo_compromisso=strtolower($_POST["titulo_compromisso"]);
+	$hora_inicio_teste=converterDataHoraBrazil2BancoMySQL($_POST["hora_inicio_teste"]);
+	$hora_final_teste=converterDataHoraBrazil2BancoMySQL($_POST["hora_final_teste"]);
+
+    $sql = "SELECT * from compromissos 
+where hora_inicio_teste between :data_inicio AND :data_final
+OR hora_final_teste between :data_inicio AND :data_final";
 
 
-
-	$validar= $pdo->prepare("SELECT * FROM compromissos WHERE titulo_compromisso=:titulo
-	 AND  hora_inicio_teste=:hora_inicio AND hora_final_teste=:hora_final");
-
+$validar= $pdo->prepare($sql);
 	
-	$validar->bindValue(":titulo",$titulo_compromisso);
+	#$validar->bindValue(":titulo",$titulo_compromisso);
 	$validar->bindValue(":hora_inicio",$hora_inicio_teste);
 	$validar->bindValue(":hora_final",$hora_final_teste);
 
 
+print_r($hora_inicio_teste);
+echo "<br>";
+print_r($hora_final_teste);
 
 	$validar->execute();
 
+#var_dump($validar);
+die;
 	if ($validar->rowCount() == 0) {
 		
 $validar=$pdo->prepare("INSERT INTO compromissos(titulo_compromisso, hora_inicio_teste,hora_final_teste) VALUES (:titulo,:hora_inicio,:hora_final)");
