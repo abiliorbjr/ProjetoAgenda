@@ -46,7 +46,9 @@
 									<h1>Adicionando compromissos</h1>
 								</legend>
 
-							<form action="adicionandoCompromisso - Copia.php" method="post">
+							<!--<form action="adicionandoCompromisso - Copia.php" method="post">-->
+
+							<form action="adicionandoCompromisso.php" method="post">
 
 											<div class="form-group">
 												<label for="titulo_compromisso">Compromisso:</label>
